@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\JobCloud.BE.Domain\JobCloud.BE.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
