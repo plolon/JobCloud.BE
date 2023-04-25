@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D457B16A-DA7A-415B-A561-BA75DA96FF80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5C587F7E-8E4E-460A-A958-E0AF7D79BB90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.Jobs", "Infrastructure\JobCloud.BE.Jobs\JobCloud.BE.Jobs.csproj", "{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.DB", "Infrastructure\JobCloud.BE.DB\JobCloud.BE.DB.csproj", "{A16E094A-54A4-4A64-88E1-B3F22202193E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.WebApi", "Core\JobCloud.BE.WebApi\JobCloud.BE.WebApi.csproj", "{C133613C-0977-4554-B5B8-9551C8CA954B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.Application", "Core\JobCloud.BE.Application\JobCloud.BE.Application.csproj", "{61E7D84E-3513-4455-950F-A11B88E195FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16E094A-54A4-4A64-88E1-B3F22202193E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16E094A-54A4-4A64-88E1-B3F22202193E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16E094A-54A4-4A64-88E1-B3F22202193E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16E094A-54A4-4A64-88E1-B3F22202193E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C133613C-0977-4554-B5B8-9551C8CA954B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C133613C-0977-4554-B5B8-9551C8CA954B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C133613C-0977-4554-B5B8-9551C8CA954B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C133613C-0977-4554-B5B8-9551C8CA954B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E7D84E-3513-4455-950F-A11B88E195FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E7D84E-3513-4455-950F-A11B88E195FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E7D84E-3513-4455-950F-A11B88E195FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E7D84E-3513-4455-950F-A11B88E195FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBA21C77-A945-45D4-ABA6-5CCA72A5D2F5} = {5C587F7E-8E4E-460A-A958-E0AF7D79BB90}
+		{A16E094A-54A4-4A64-88E1-B3F22202193E} = {5C587F7E-8E4E-460A-A958-E0AF7D79BB90}
+		{C133613C-0977-4554-B5B8-9551C8CA954B} = {D457B16A-DA7A-415B-A561-BA75DA96FF80}
+		{61E7D84E-3513-4455-950F-A11B88E195FC} = {D457B16A-DA7A-415B-A561-BA75DA96FF80}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AA8A38F-0A4D-42BE-95B1-07307DB3867C}
+	EndGlobalSection
+EndGlobal
