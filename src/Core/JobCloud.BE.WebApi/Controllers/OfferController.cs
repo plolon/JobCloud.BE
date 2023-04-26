@@ -1,7 +1,5 @@
 ﻿using JobCloud.BE.Application;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
 
 namespace JobCloud.BE.WebApi.Controllers
 {
