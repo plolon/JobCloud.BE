@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JustJoinIT", "JustJoinIT", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.Scrapper.JustJoinIt.Application", "JobCloud.BE.Scrapper.JustJoinIt.Application\JobCloud.BE.Scrapper.JustJoinIt.Application.csproj", "{A6B25606-A768-46A1-A917-52539C43440F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCloud.BE.Domain", "JobCloud.BE.Domain\JobCloud.BE.Domain.csproj", "{0EEEC1D0-1A5C-4545-ABED-18CFB15DC492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCloud.BE.Domain", "JobCloud.BE.Domain\JobCloud.BE.Domain.csproj", "{0EEEC1D0-1A5C-4545-ABED-18CFB15DC492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

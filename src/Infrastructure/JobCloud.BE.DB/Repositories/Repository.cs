@@ -1,10 +1,9 @@
-﻿using JobCloud.BE.DB;
-using JobCloud.BE.Domain.Models;
+﻿using JobCloud.BE.Domain.Models;
 using JobCloud.BE.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace JobCloud.BE.Application.Repositories
+namespace JobCloud.BE.DB.Repositories
 {
     public class Repository<T> : IRepository<T> where T : DomainEntity
     {
@@ -15,7 +14,7 @@ namespace JobCloud.BE.Application.Repositories
             _context = context;
             _dbSet = context.Set<T>();
         }
-         
+
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();

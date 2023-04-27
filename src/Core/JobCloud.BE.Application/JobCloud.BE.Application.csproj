@@ -11,4 +11,8 @@
     <ProjectReference Include="..\..\JobCloud.BE.Domain\JobCloud.BE.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="IoC\" />
+  </ItemGroup>
+
 </Project>

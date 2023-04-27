@@ -1,9 +1,8 @@
-﻿using JobCloud.BE.DB;
-using JobCloud.BE.Domain.Models;
+﻿using JobCloud.BE.Domain.Models;
 using JobCloud.BE.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace JobCloud.BE.Application.Repositories
+namespace JobCloud.BE.DB.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

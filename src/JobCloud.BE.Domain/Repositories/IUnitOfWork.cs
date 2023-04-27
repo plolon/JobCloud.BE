@@ -16,6 +16,11 @@ namespace JobCloud.BE.Domain.Repositories
 
         Task Dispose();
 
+        /// <summary>
+        /// Returns Generic repository with basic crud operations implemented
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         IRepository<T> GetGenericRepository<T>() where T : DomainEntity;
     }
 }
