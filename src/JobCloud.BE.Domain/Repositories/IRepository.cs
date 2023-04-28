@@ -6,8 +6,9 @@ namespace JobCloud.BE.Domain.Repositories
     public interface IRepository<T> where T : DomainEntity
     {
         Task<T> AddAsync(T entity);
+        Task<string> BulkInsertAsync(IEnumerable<T> entities);
         Task DeleteAsync(T entity);
-        Task DeleteManyAsync(Expression<Func<T, bool>> filter);
+        Task<string> BulkDeleteAsync(Expression<Func<T, bool>> filter);
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetAsync(int id);
         Task<IEnumerable<T>> GetManyAsync(

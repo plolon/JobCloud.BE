@@ -58,6 +58,18 @@ namespace JobCloud.BE.DB.Repositories
             return entity;
         }
 
+        public async Task<string> BulkInsertAsync(IEnumerable<T> entitites)
+        {
+            try
+            {
+                await _dbSet.BulkInsertAsync(entitites);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "Success";
+        }
 
         public Task UpdateAsync(T entity)
         {
@@ -71,11 +83,18 @@ namespace JobCloud.BE.DB.Repositories
             _dbSet.Remove(entity);
             return Task.CompletedTask;
         }
-        public Task DeleteManyAsync(Expression<Func<T, bool>> filter)
+        public async Task<string> BulkDeleteAsync(Expression<Func<T, bool>> filter)
         {
             var entities = _dbSet.Where(filter);
-            _dbSet.RemoveRange(entities);
-            return Task.CompletedTask;
+            try
+            {
+                await _dbSet.BulkDeleteAsync(entities);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            return "Success";
         }
     }
 }
